@@ -1,50 +1,84 @@
-# Welcome to your Expo app 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Markdown
+# Clinic Scribe 🩺
 
-## Get started
+> An AI-powered clinical assistant and transcription app designed to convert live doctor-patient consultations into structured, actionable medical notes.
 
-1. Install dependencies
+## 📖 Overview
 
+Medical professionals spend a massive portion of their day writing charts and clinical notes. **Clinic Scribe** is a mobile application built to automate this process. By capturing multi-turn dialogue during patient consultations and passing it through optimized Large Language Model (LLM) pipelines, this tool automatically extracts key medical insights and formats them into structured clinical documentation.
+
+## ✨ Key Features
+
+* **Real-Time Speech-to-Text (STT):** Captures live conversations between doctors and patients with high accuracy.
+* **Intelligent Summarization:** Processes raw transcripts through AI prompt pipelines to filter out casual conversation and isolate medical facts.
+* **Automated Data Extraction:** Automatically identifies and structures critical clinical data, including:
+  * Patient Symptoms & History
+  * Diagnoses
+  * Prescriptions & Dosages
+  * Follow-up Schedules
+* **Cross-Platform Mobile Interface:** Built with React Native and Expo, offering a seamless and intuitive UI for both iOS and Android devices.
+
+## 🛠️ Tech Stack
+
+* **Frontend Framework:** React Native, Expo, Expo Router
+* **Language:** TypeScript, JavaScript
+* **AI & Processing (Backend Context):** Speech-to-Text APIs, Large Language Models (LLMs)
+* **Styling/UI:** Custom React Native components with responsive layouts
+
+## 🚀 Installation & Setup
+
+This project uses [Expo](https://expo.dev/) for cross-platform development.
+
+1. **Clone the repository:**
    ```bash
-   npm install
-   ```
+   git clone [https://github.com/yourusername/Clinic_Scribe.git](https://github.com/yourusername/Clinic_Scribe.git)
+   cd Clinic_Scribe/ClinicalScribe
+Install dependencies:
 
-2. Start the app
+Bash
+npm install
+Start the development server:
 
-   ```bash
-   npx expo start
-   ```
+Bash
+npx expo start
+Run on your device:
 
-In the output, you'll find options to open the app in a
+Download the Expo Go app on your iOS or Android device.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Scan the QR code generated in your terminal to launch the app locally.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+Alternatively, press i to open in an iOS simulator or a for an Android emulator.
 
-## Get a fresh project
+📂 Project Structure
+app/: Contains the Expo Router file-based routing layout (Tabs, Modals, etc.).
 
-When you're ready, run:
+components/: Reusable React components (Themed UI, layouts, buttons).
 
-```bash
-npm run reset-project
-```
+hooks/: Custom React hooks for theme and state management.
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+assets/: Images, icons, and fonts.
 
-## Learn more
+constants/: Global variables and theme color definitions.
 
-To learn more about developing your project with Expo, look at the following resources:
+🔮 Roadmap
+[ ] Integrate secure, HIPAA-compliant backend storage for patient notes.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+[ ] Add PDF export functionality for finalized clinical summaries.
 
-## Join the community
+[ ] Implement voice-command controls for hands-free charting.
 
-Join our community of developers creating universal apps.
+[ ] Support multi-language transcription for diverse patient demographics.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+🤝 Contributing
+Contributions, issues, and feature requests are welcome! Feel free to check the issues page if you want to contribute to the project.
+
+
+
+
+
+
+
+
+
+
